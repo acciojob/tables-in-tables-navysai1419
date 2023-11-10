@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .black-cell {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Main Table</h1>
+
+    <!-- Main Table -->
+    <table>
+        <tr>
+            <td>
+                <!-- Nested Table 1 -->
+                <table>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1,1</td>
+                        <td>Data 1,2</td>
+                    </tr>
+                    <!-- Add more rows and data as needed -->
+                </table>
+            </td>
+            <td>
+                <!-- Nested Table 2 -->
+                <table>
+                    <tr>
+                        <th>Nested Table 2</th>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="black-cell">HTML</td>
+                        <td>Data 2,1</td>
+                        <td>Data 2,2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3,1</td>
+                        <td>Data 3,2</td>
+                    </tr>
+                    <!-- Add more rows and data as needed -->
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Nested Table 3 -->
+                <table>
+                    <tr>
+                        <th>Header 3</th>
+                        <th>Header 4</th>
+                    </tr>
+                    <tr>
+                        <td>Data 4,1</td>
+                        <td>Data 4,2</td>
+                    </tr>
+                    <!-- Add more rows and data as needed -->
+                </table>
+            </td>
+            <td>
+                <!-- Nested Table 4 -->
+                <table>
+                    <tr>
+                        <th>Header 5</th>
+                        <th>Header 6</th>
+                    </tr>
+                    <tr>
+                        <td>Data 5,1</td>
+                        <td>Data 5,2</td>
+                    </tr>
+                    <!-- Add more rows and data as needed -->
+                </table>
+            </td>
+        </tr>
     </table>
-  </body>
+
+    <!-- List in one of the tables -->
+    <h2>List in Nested Table 2</h2>
+    <table>
+        <tr>
+            <td>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
 </html>
